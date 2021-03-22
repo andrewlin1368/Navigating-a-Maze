@@ -32,23 +32,6 @@ arithmetic expression are remembered for later computation.
 2. undoing (backtracking from) an action, for example the “undo” button on most text
 editors or the “back” button on a browser
 
-## Programming Exercise, Part 1
-a. Download the starter code for this part of the project. It contains a partial solution for the
-problem of a robot finding its way out of a warehouse. <br />
-FILES: MazePath.cxx, MazePath.h, and MazePath.cpp <br />
-b. Complete the directionsOut() member function of the MazePath class and the
-overloaded output operator in the Path class. <br />
-c. Use the MazePathTest program to check whether your solution is correct. <br />
-d. Add a test to the MazePathTest program for the following steps: <br />
-“NESWNESWNESWNESW” (you have to figure out the solution and compare to it using
-assert; just look at the other tests in the MazePathTest program to understand how a
-test is written for a specific input value).
-
-## Programming Exercise, Part 2
-Write a client program that will let the user enter a path into the maze and it will output the
-sequence of reverse steps to get out. The program should loop until the user decides to quit.
-Validate that the user does not enter invalid input (only N, S, W, and E should be part of the
-input string.)
 
 ## Navigating a Maze
 Assume that we have not been given the steps that the robot took to go inside a maze and we
@@ -68,24 +51,3 @@ either blocked or are marked visited already, pop T off the stack and go to step
 7. Otherwise, select a square S that is adjacent to T, unvisited, and unblocked.
 Mark S as visited and push its positions on the stack. Go to step 4.
 
-## Programming Homework
-Download the starter code for this part of the project and make sure you understand the Maze
-class. <br />
-FILES: Maze.cpp, Maze.h <br />
-TASK 1. Write a client program (MazeClient.cpp) to create the following maze as an object of
-the Maze class: <br />
- _________ <br />
- |S......| <br />
- |...X...| <br />
- |...X...| <br />
- |.......| <br />
- |.......| <br />
- |.......| <br />
- |......G| <br />
- --------- <br />
-TASK 2. Implement the solveBacktracking member function of the Maze class (Maze.cxx). Use
-the algorithm above. <br />
-TASK 3. Solve the maze created in TASK1 using the solveBacktracking function. <br />
-NOTE: You might need to add functions to the Maze class, depending on how you approach the
-solution. Add/modify the class as needed. But do not repeat functionality. Use the functions that
-are there when appropriate (e.g., the isClear function for checking if a cell is clear) <br />
