@@ -17,9 +17,6 @@ want to output the directions (reverse steps) that will get the robot out of the
 we will work with navigation and pathfinding in a maze.
 
 ## Quick Recap of Concepts (1)
-This section is a quick recap of the concepts that you need to know for this project. If you don’t
-understand something or can’t answer the questions and exercises, you should review the
-textbook/material provided for this topic. <br />
 A stack is a linear structure (like an array). A stack (unlike an array) restricts how elements are
 inserted, retrieved, and removed: The most recently inserted element in the stack is the only
 one that can be retrieved or removed. This is called LIFO ordering (last-in, first-out).
